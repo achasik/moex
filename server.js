@@ -9,3 +9,4 @@ app.get('/', (_, res, next) => {
       next(error);
    }
 });
+export default app;
