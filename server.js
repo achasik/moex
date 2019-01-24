@@ -1,5 +1,5 @@
-import express from 'express';
-
+const express = require('express');
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.get('/', (_, res, next) => {
@@ -9,4 +9,5 @@ app.get('/', (_, res, next) => {
       next(error);
    }
 });
-export default app;
+
+app.listen(PORT, () => console.log('Node app is running on port', PORT));
