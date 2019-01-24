@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (_, res, next) => {
    try {
-      res.send(`Hello world`);
+      res.send(`Hello world!`);
    } catch (error) {
       next(error);
    }
